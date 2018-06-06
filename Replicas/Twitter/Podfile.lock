@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - KeychainAccess (3.1.1)
+  - OAuthSwift (1.2.0)
+  - OAuthSwiftAlamofire (0.1.0):
+    - Alamofire
+    - OAuthSwift
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - KeychainAccess
+  - OAuthSwift
+  - OAuthSwiftAlamofire
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - KeychainAccess
+    - OAuthSwift
+    - OAuthSwiftAlamofire
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  OAuthSwift: 7fd6855b8e4d58eb5a30d156ea9bed7a8aecd1ca
+  OAuthSwiftAlamofire: 20bb998ac506f82c3bab0625fbc98a9c6fca783f
+
+PODFILE CHECKSUM: 0601e1b954627411db089b22c01b32ed6014f8d0
+
+COCOAPODS: 1.5.0
