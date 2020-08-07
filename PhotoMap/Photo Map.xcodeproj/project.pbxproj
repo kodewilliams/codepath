@@ -13,7 +13,6 @@
 		228D475419F5DA9F00DE9903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 228D475219F5DA9F00DE9903 /* Main.storyboard */; };
 		228D475619F5DA9F00DE9903 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 228D475519F5DA9F00DE9903 /* Images.xcassets */; };
 		228D475919F5DA9F00DE9903 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228D475719F5DA9F00DE9903 /* LaunchScreen.xib */; };
-		228D476519F5DAA000DE9903 /* Photo_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D476419F5DAA000DE9903 /* Photo_MapTests.swift */; };
 		228D477019F5DAFF00DE9903 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D476F19F5DAFF00DE9903 /* LocationsViewController.swift */; };
 		22BB9BD519F5DD21000048C2 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB9BD419F5DD21000048C2 /* LocationCell.swift */; };
 		ADC9759370B6007C332C3557 /* Pods_Photo_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF4486A3167595D36262B15 /* Pods_Photo_Map.framework */; };
@@ -42,8 +41,6 @@
 		228D475519F5DA9F00DE9903 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		228D475819F5DA9F00DE9903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		228D475E19F5DAA000DE9903 /* Photo MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		228D476319F5DAA000DE9903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		228D476419F5DAA000DE9903 /* Photo_MapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_MapTests.swift; sourceTree = "<group>"; };
 		228D476F19F5DAFF00DE9903 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		22BB9BD419F5DD21000048C2 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		8BF4486A3167595D36262B15 /* Pods_Photo_Map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo_Map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				228D474B19F5DA9F00DE9903 /* Photo Map */,
-				228D476119F5DAA000DE9903 /* Photo MapTests */,
 				228D474A19F5DA9F00DE9903 /* Products */,
 				C53175EB32E8EEC8585BFFB2 /* Frameworks */,
 				5AE6C0600F7285B1147C2B64 /* Pods */,
@@ -111,23 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				228D474D19F5DA9F00DE9903 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		228D476119F5DAA000DE9903 /* Photo MapTests */ = {
-			isa = PBXGroup;
-			children = (
-				228D476419F5DAA000DE9903 /* Photo_MapTests.swift */,
-				228D476219F5DAA000DE9903 /* Supporting Files */,
-			);
-			path = "Photo MapTests";
-			sourceTree = "<group>";
-		};
-		228D476219F5DAA000DE9903 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				228D476319F5DAA000DE9903 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -218,7 +197,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Timothy Lee";
 				TargetAttributes = {
 					228D474819F5DA9F00DE9903 = {
@@ -235,7 +214,7 @@
 			};
 			buildConfigurationList = 228D474419F5DA9F00DE9903 /* Build configuration list for PBXProject "Photo Map" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -343,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228D476519F5DAA000DE9903 /* Photo_MapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,18 +359,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -427,18 +414,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -475,7 +471,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Photo Map/Photo Map-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -491,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodewilliams.photomap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Photo Map/Photo Map-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
